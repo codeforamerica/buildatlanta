@@ -6,26 +6,32 @@ module.exports = View.extend({
     <div class="projectView">
       <div role="name"></div>
       <div role="description"></div>
-      <div role="votes"></div>
+      <div role="stars"></div>
+      <div role="myStar">star</div>
     </div>
   */}),
-
+  
   bindings: {
     'model.name': '[role=name]',
     'model.description': '[role=description]',
-    'model.votes': '[role=votes]',
+    'model.stars': '[role=stars]',
+    'model.isStarred': {
+      type: 'booleanClass',
+      role: 'myStar',
+      name: 'isStarred',
+    }
   },
 
   events: {
     'click': 'focusProject',
-    'click [role=votes]': 'addVote'
+    'click [role=myStar]': 'addStar',
   },
 
   focusProject: function() {
     this.model.trigger('focus');
   },
 
-  addVote: function() {
-    this.model.votes++;
+  addStar: function() {
+    this.model.star();
   }
 });

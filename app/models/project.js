@@ -6,6 +6,22 @@ module.exports = Model.extend({
     name: ['string', true, ''],
     description: ['string', true, ''],
     latlng: ['array', true, undefined],
-    votes: ['number', true, 0],
+    stars: ['number', true, 0],
+  },
+
+  derived: {
+    isStarred: {
+      deps: ['stars'],
+      fn: function() {
+        return !!JSON.parse(localStorage.getItem(this.id));
+      },
+    }
+  },
+
+  star: function() {
+    if (this.isStarred) return;
+    
+    localStorage.setItem(this.id, JSON.stringify(true));
+    this.stars++;
   }
 });

@@ -23,3 +23,7 @@
 .projectView {
   padding: 10px 0;
 }
+
+.isStarred {
+  font-weight: bold;
+}
