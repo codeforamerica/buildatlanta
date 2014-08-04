@@ -5,6 +5,6 @@ module.exports = Model.extend({
     id: 'any',
     name: ['string', true, ''],
     description: ['string', true, ''],
-    latlng: ['string', true, '']
+    latlng: ['array', true, undefined]
   }
 });
