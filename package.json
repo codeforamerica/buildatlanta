@@ -7,7 +7,7 @@
     "ampersand-view": "^6.0.9",
     "browserify": "^5.9.1",
     "domready": "^1.0.5",
-    "mapbox.js": "^1.6.4",
+    "mapbox.js": "^2.0.0",
     "multiline": "^0.3.4"
   },
   "devDependencies": {

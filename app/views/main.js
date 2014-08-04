@@ -25,7 +25,6 @@ module.exports = View.extend({
     window.L.mapbox.map('map', config.mapbox.mapId, {
       accessToken: config.mapbox.accessToken,
       boxZoom: false,
-      tileLayer: { detectRetina: true },
       attributionControl: false, 
       infoControl: true,
     }).setView(config.map.center, config.map.zoomLevel);
