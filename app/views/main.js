@@ -38,7 +38,7 @@ module.exports = View.extend({
     }).setView(config.map.center, config.map.zoomLevel);
 
     this.renderCollection(this.collection, ProjectView, this.getByRole('projects'));
-    this.renderCollection(this.collection, MarkerView, undefined);
+    this.renderCollection(this.collection, MarkerView);
 
     return this;
   }

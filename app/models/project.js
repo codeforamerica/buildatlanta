@@ -5,6 +5,7 @@ module.exports = Model.extend({
     id: 'any',
     name: ['string', true, ''],
     description: ['string', true, ''],
-    latlng: ['array', true, undefined]
+    latlng: ['array', true, undefined],
+    votes: ['number', true, 0],
   }
 });
