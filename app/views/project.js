@@ -17,7 +17,12 @@ module.exports = View.extend({
   },
 
   events: {
+    'click': 'focusProject',
     'click [role=votes]': 'addVote'
+  },
+
+  focusProject: function() {
+    this.model.trigger('focus');
   },
 
   addVote: function() {
