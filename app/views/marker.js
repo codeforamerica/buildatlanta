@@ -9,7 +9,7 @@ module.exports = View.extend({
   
   render: function() {
     var marker = window.L.marker(this.model.latlng);
-    marker.addTo(window.L.mapInstance);
+    // marker.addTo(window.L.mapInstance);
 
     marker.on('click', function() {
       this.model.trigger('focus');

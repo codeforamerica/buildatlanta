@@ -39,6 +39,7 @@ module.exports = View.extend({
       boxZoom: false,
       attributionControl: false, 
       infoControl: true,
+      scrollWheelZoom: false,
     }).setView(config.map.center, config.map.zoomLevel);
 
     this.renderCollection(this.collection, ProjectView, this.getByRole('projects'));
