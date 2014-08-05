@@ -15,8 +15,11 @@ module.exports = View.extend({
       <div class="content">
         <header>
           <h1>Build Atlanta</h1>
-          <p>Help the City of Atlanta spend $250 million improving infrastructure.</p>
+          <p>We're spending $250 million dollars on improving the city.</p>
         </header>
+        <nav>
+          <a href="sdfd">Bridges</a> <a href="roads">Roads</a> <a href="roads">Traffic</a>
+        </nav>
         <div role="projects"></div>
       </div>
       <div id="map"></div>
