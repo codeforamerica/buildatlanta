@@ -18,9 +18,17 @@ module.exports = Model.extend({
     }
   },
 
+  parse: function(resp) {
+    return {
+      name: resp['Project Name'],
+      description: resp['Project Description'],
+      latlng: [33.848481, -84.388375],
+    };
+  },
+
   star: function() {
     if (this.isStarred) return;
-    
+
     localStorage.setItem(this.id, JSON.stringify(true));
     this.stars++;
   }

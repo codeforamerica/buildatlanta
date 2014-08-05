@@ -8,12 +8,18 @@
     "browserify": "^5.9.1",
     "domready": "^1.0.5",
     "mapbox.js": "^2.0.0",
-    "multiline": "^0.3.4"
+    "multiline": "^0.3.4",
+    "node-csvify": "0.0.2"
   },
   "devDependencies": {
     "catw": "^0.2.0",
     "http-server": "^0.6.1",
     "watchify": "^1.0.1"
+  },
+  "browserify": {
+    "transform": [
+      "node-csvify"
+    ]
   },
   "scripts": {
     "watch-css": "catw 'styles/*.css' -o build/bundle.css -v",

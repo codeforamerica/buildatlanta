@@ -1,10 +1,11 @@
 var View = require('ampersand-view');
 var multiline = require('multiline');
 var config = require('../config.js');
-var data = require('../fakedata.js');
+// var data = require('../fakedata.js');
 var Projects = require('../models/projects.js');
 var ProjectView = require('./project.js');
 var MarkerView = require('./marker.js');
+var data = require('../data.csv');
 
 // Automatically attached to window.L
 require('mapbox.js');
@@ -27,7 +28,7 @@ module.exports = View.extend({
   */}),
 
   initialize: function() {
-    this.collection = new Projects(data);
+    this.collection = new Projects(data, { parse: true });
   },
 
   render: function() {
