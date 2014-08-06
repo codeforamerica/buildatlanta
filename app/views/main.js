@@ -64,9 +64,10 @@ module.exports = View.extend({
     if (this.filterText === '') return true;
 
     var name = item.get('name').toLowerCase();
+    var description = item.get('description').toLowerCase();
     var filterText = this.filterText.toLowerCase();
 
-    return name.indexOf(filterText) > -1;
+    return name.indexOf(filterText) > -1 || description.indexOf(filterText) > -1;
   },
 
   updateFilter: function() {
