@@ -6,30 +6,13 @@ module.exports = Model.extend({
     name: ['string', true, ''],
     description: ['string', true, ''],
     latlng: ['array', true, undefined],
-    stars: ['number', true, 0],
-  },
-
-  derived: {
-    isStarred: {
-      deps: ['stars'],
-      fn: function() {
-        return !!JSON.parse(localStorage.getItem(this.id));
-      },
-    }
   },
 
   parse: function(resp) {
     return {
       name: resp['Project Name'],
       description: resp['Project Description'],
-      latlng: [33.848481, -84.388375],
+      latlng: [33.848481 + (Math.random() - 1) * 0.1, -84.388375 + (Math.random() - 1) * 0.1],
     };
-  },
-
-  star: function() {
-    if (this.isStarred) return;
-
-    localStorage.setItem(this.id, JSON.stringify(true));
-    this.stars++;
   }
 });

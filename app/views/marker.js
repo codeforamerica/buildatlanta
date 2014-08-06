@@ -8,9 +8,9 @@ module.exports = View.extend({
   },
   
   render: function() {
-    var marker = window.L.marker(this.model.latlng);
-    // marker.addTo(window.L.mapInstance);
+    var marker = this.marker = window.L.marker(this.model.latlng);
 
+    marker.addTo(window.L.mapInstance);
     marker.on('click', function() {
       this.model.trigger('focus');
     }, this);
@@ -20,5 +20,10 @@ module.exports = View.extend({
 
   centerMarker: function() {
     window.L.mapInstance.panTo(this.model.latlng);
+  },
+
+  remove: function() {
+    window.L.mapInstance.removeLayer(this.marker);
+    View.prototype.remove.apply(this, arguments);
   },
 });
