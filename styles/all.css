@@ -11,17 +11,27 @@ body {
   font-family: HelveticaNeue, Helvetica, sans-serif;
 }
 
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 50px;
+  background: green;
+}
+
 header h1 {
+  display: inline-block;
   margin: 10px 0 0;
 }
 
-header p {
-  margin-top: 10px;
+header nav {
+  display: inline-block
 }
 
 #map {
   position: fixed;
-  top: 0;
+  top: 50px;
   right: 0;
   bottom: 0;
   width: 50%;
@@ -29,7 +39,16 @@ header p {
 
 .content {
   margin-right: 50%;
+  margin-top: 50px;
   padding: 20px 30px;
+}
+
+select {
+  width: 200px;
+  height: 26px;
+  font-size: 14px;
+  background: none;
+  margin-top: 10px;
 }
 
 .projectView {

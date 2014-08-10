@@ -14,19 +14,23 @@ require('mapbox.js');
 module.exports = View.extend({
   template: multiline(function(){/*
     <body>
-      <div class="content">
-        <header>
-          <h1>Build Atlanta</h1>
-          <p>We're spending $250 million dollars on improving the city.</p>
-        </header>
+      <header>
+        <h1>Build Atlanta</h1>
         <nav>
           <input type="text" role="searchbox">
           <select role="neighborhoods"></select>
           <select role="npus"></select>
           <select role="categories"></select>
         </nav>
+      </header>
+
+      <div class="content">
+        <div role="summary">
+          <div>Showing <span role="count"></span> of <span role="total"></span> projects</div>
+        <div>
         <div role="projects"></div>
       </div>
+
       <div id="map"></div>
     </body>
   */}),
@@ -42,6 +46,11 @@ module.exports = View.extend({
   events: {
     'keyup [role="searchbox"]': 'updateFilter',
     'change select': 'updateFilter'
+  },
+
+  bindings: {
+    'filtered.length': '[role="count"]',
+    'collection.length': '[role="total"]'
   },
 
   render: function() {
