@@ -1,4 +1,5 @@
 var Model = require('ampersand-model');
+var config = require('../config.js');
 
 module.exports = Model.extend({
   props: {
@@ -26,7 +27,8 @@ module.exports = Model.extend({
       category: resp['Category'],
       npus: npus,
       neighborhoods: neighborhoods,
-      latlng: [33.848481 + (Math.random() - 1) * 0.1, -84.388375 + (Math.random() - 1) * 0.1],
+      latlng: [config.map.center[0] + (Math.random() - 0.5) * 0.1,
+               config.map.center[1] + (Math.random() - 0.5) * 0.1],
     };
   }
 });
