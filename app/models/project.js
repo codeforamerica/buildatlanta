@@ -1,15 +1,27 @@
 var Model = require('ampersand-model');
 var config = require('../config.js');
+var accounting = require('accounting');
 
 module.exports = Model.extend({
   props: {
     id: 'any',
     name: ['string', true, ''],
     description: ['string', true, ''],
+    cost: ['number', true, 0],
+    priority: ['string', true, ''],
     category: ['string', true, ''],
     npus: ['array', true, undefined],
     neighborhoods: ['array', true, undefined],
     latlng: ['array', true, undefined],
+  },
+
+  derived: {
+    readableCost: {
+      deps: ['cost'],
+      fn: function() {
+        return accounting.formatMoney(this.cost, { precision: 0 });
+      }
+    }
   },
 
   parse: function(resp) {
@@ -24,6 +36,8 @@ module.exports = Model.extend({
     return {
       name: resp['Project Name'],
       description: resp['Project Description'],
+      cost: accounting.unformat(resp['Project Cost Estimate']),
+      priority: resp['Project Priority'],
       category: resp['Category'],
       npus: npus,
       neighborhoods: neighborhoods,
