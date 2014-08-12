@@ -7,6 +7,7 @@ var MarkerView = require('./marker.js');
 var data = require('../data.csv');
 var SubCollection = require('ampersand-subcollection');
 var _ = require('underscore');
+var accounting = require('accounting');
 
 // Automatically attached to window.L
 require('mapbox.js');
@@ -26,7 +27,8 @@ module.exports = View.extend({
 
       <div class="content">
         <div role="summary">
-          <div>Showing <span role="count"></span> of <span role="total"></span> projects</div>
+          <div><span role="count"></span> proposed projects</div>
+          <div>Estimated cost: <span role="cost"></span></div>
         <div>
         <div role="projects"></div>
       </div>
@@ -37,20 +39,17 @@ module.exports = View.extend({
   
   initialize: function() {
     this.collection = new Projects(data, { parse: true });
-    this.filtered = new SubCollection(this.collection, {
-      filter: _.bind(this.filter, this),
-      limit: 50
-    });
+
+    var boundFilter = _.bind(this.filter, this);
+    this.filtered = new SubCollection(this.collection, { filter: boundFilter, limit: 100 });
+
+    // Keep a seperate subcollection with no limit to enable cost summaries
+    this.filteredAll = new SubCollection(this.collection, { filter: boundFilter });
   },
 
   events: {
     'keyup [role="searchbox"]': 'updateFilter',
     'change select': 'updateFilter'
-  },
-
-  bindings: {
-    'filtered.length': '[role="count"]',
-    'collection.length': '[role="total"]'
   },
 
   render: function() {
@@ -71,6 +70,8 @@ module.exports = View.extend({
 
     this.renderCollection(this.filtered, ProjectView, this.getByRole('projects'));
     this.renderCollection(this.filtered, MarkerView);
+
+    this.updateFilter();
 
     return this;
   },
@@ -122,6 +123,11 @@ module.exports = View.extend({
     console.log(this.filters);
 
     this.filtered._runFilters();
-  },
+    this.filteredAll._runFilters();
 
+    // Update the project count & filters
+    var totalCost = this.filteredAll.reduce(function(prev, item) { return item.cost + prev; }, 0);
+    this.getByRole('cost').innerHTML = accounting.formatMoney(totalCost, { precision: 0 });
+    this.getByRole('count').innerHTML = this.filteredAll.length;
+  },
 });
