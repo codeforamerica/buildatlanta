@@ -17,16 +17,33 @@ header {
   right: 0;
   left: 0;
   height: 50px;
-  background: green;
+  background: #2780CA;
+  color: rgba(255, 255, 255, 0.9);
+  padding: 5px 10px;
+  padding-top: 3px;
+  overflow: hidden;
 }
 
 header h1 {
   display: inline-block;
   margin: 10px 0 0;
+  font-size: 20px;
 }
 
 header nav {
-  display: inline-block
+  display: inline-block;
+  float: right;
+}
+
+header .searchbox {
+  border-radius: 20px;
+  border: 1px solid #B1B1B1;
+  margin-left: 8px;
+  color: #000;
+  padding: 5px 10px;
+  font-size: 14px;
+  outline: none;
+  width: 200px;
 }
 
 #map {
@@ -44,17 +61,46 @@ header nav {
 }
 
 select {
-  width: 200px;
+  width: 160px;
   height: 26px;
   font-size: 14px;
   background: none;
   margin-top: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.summary {
+  font-size: 16px;
+  line-height: 27px;
+  background: #DAEBF5;
+  margin: -5px -10px;
+  padding: 10px 15px;
+  margin-bottom: 5px;
 }
 
 .projectView {
-  padding: 10px 0;
+  padding: 7px 0;
+  font-size: 15px;
+  line-height: 21px;
 }
 
-.isStarred {
+.projectView:hover {
+  cursor: pointer;
+}
+
+.projectView:hover .name {
+  border-bottom: 1px dotted #666;
+  margin-bottom: -1px;
+}
+
+.projectView .name {
   font-weight: bold;
+  display: inline-block;
+}
+
+.projectView .details {
+  color: #9E9E9E;
+}
+
+.projectView .description {
 }

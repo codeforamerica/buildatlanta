@@ -4,12 +4,11 @@ var multiline = require('multiline');
 module.exports = View.extend({
   template: multiline(function(){/*
     <div class="projectView">
-      <div role="name"></div>
-      <div role="description"></div>
+      <div role="name" class="name"></div>
       <div class="details">
-        <span role="cost" class="cost"></span>
-        <span role="priority" class="priority"></span>
+        <span role="cost" class="cost"></span> (<span role="priority" class="priority"></span>)
       </div>
+      <div role="description" class="description"></div>
     </div>
   */}),
 

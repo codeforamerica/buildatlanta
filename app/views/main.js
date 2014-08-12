@@ -16,9 +16,9 @@ module.exports = View.extend({
   template: multiline(function(){/*
     <body>
       <header>
-        <h1>Build Atlanta</h1>
+        <h1>ATL Infrastructure Map</h1>
         <nav>
-          <input type="text" role="searchbox">
+        <input type="text" role="searchbox" class="searchbox" placeholder="type to search">
           <select role="neighborhoods"></select>
           <select role="npus"></select>
           <select role="categories"></select>
@@ -26,10 +26,10 @@ module.exports = View.extend({
       </header>
 
       <div class="content">
-        <div role="summary">
+        <div class="summary">
           <div><span role="count"></span> proposed projects</div>
           <div>Estimated cost: <span role="cost"></span></div>
-        <div>
+        </div>
         <div role="projects"></div>
       </div>
 
