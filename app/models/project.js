@@ -41,8 +41,8 @@ module.exports = Model.extend({
       category: resp['Category'],
       npus: npus,
       neighborhoods: neighborhoods,
-      latlng: [config.map.center[0] + (Math.random() - 0.5) * 0.1,
-               config.map.center[1] + (Math.random() - 0.5) * 0.1],
+      latlng: [config.map.center[0] + (Math.random() - 0.5) * 0.2,
+               config.map.center[1] + (Math.random() - 0.5) * 0.2],
     };
   }
 });

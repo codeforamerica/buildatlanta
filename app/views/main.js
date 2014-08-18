@@ -8,6 +8,7 @@ var data = require('../data.csv');
 var SubCollection = require('ampersand-subcollection');
 var _ = require('underscore');
 var accounting = require('accounting');
+var npus = require('../npus.geojson');
 
 // Automatically attached to window.L
 require('mapbox.js');
@@ -68,6 +69,8 @@ module.exports = View.extend({
       scrollWheelZoom: false,
     }).setView(config.map.center, config.map.zoomLevel);
 
+    this.renderOverlay();
+
     this.renderCollection(this.filtered, ProjectView, this.getByRole('projects'));
     this.renderCollection(this.filtered, MarkerView);
 
@@ -82,6 +85,31 @@ module.exports = View.extend({
     });
     options.unshift('<option value="all">All ' + desc + '</option>');
     this.getByRole(role).innerHTML = options;
+  },
+
+  renderOverlay: function() {
+    var style = {
+      color: '#2780CA',
+      weight: 1,
+      opacity: 0.8,
+      fillOpacity: 0.1,
+    };
+
+    var filterTo = _.bind(function(npu) {
+      this.getByRole('npus').value = npu;
+      this.updateFilter();
+    }, this);
+
+    var onEachFeature = function(feature, layer) {
+      layer.on('click', function() {
+        filterTo(feature.properties.NPU);
+      });
+    };
+
+    window.L.geoJson(npus, {
+      style: style,
+      onEachFeature: onEachFeature,
+    }).addTo(window.L.mapInstance);
   },
 
   filters: {
@@ -120,7 +148,6 @@ module.exports = View.extend({
 
     var category = this.getByRole('categories').value;
     this.filters.category = category === 'all' ? false : category;
-    console.log(this.filters);
 
     this.filtered._runFilters();
     this.filteredAll._runFilters();
