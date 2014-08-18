@@ -1,5 +1,6 @@
 var View = require('ampersand-view');
 var multiline = require('multiline');
+var CommentView = require('./comment');
 
 module.exports = View.extend({
   template: multiline(function(){/*
@@ -7,6 +8,7 @@ module.exports = View.extend({
       <div role="name" class="name"></div>
       <div class="details">
         <span role="cost" class="cost"></span> (<span role="priority" class="priority"></span>)
+        <div class="addComment" role="comment">Comment</div>
       </div>
       <div role="description" class="description"></div>
     </div>
@@ -21,7 +23,12 @@ module.exports = View.extend({
 
   events: {
     'click': 'focusProject',
-    'click [role=myStar]': 'addStar',
+    'click [role=comment]': 'openComments',
+  },
+
+  openComments: function() {
+    var commentView = new CommentView({ model: this.model });
+    this.renderSubview(commentView, document.body);
   },
 
   focusProject: function() {

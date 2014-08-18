@@ -19,7 +19,7 @@ module.exports = View.extend({
       <header>
         <h1>ATL Infrastructure Map</h1>
         <nav>
-        <input type="text" role="searchbox" class="searchbox" placeholder="type to search">
+          <input type="text" role="searchbox" class="searchbox" placeholder="type to search">
           <select role="neighborhoods"></select>
           <select role="npus"></select>
           <select role="categories"></select>

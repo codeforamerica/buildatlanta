@@ -84,13 +84,10 @@ select {
   line-height: 21px;
 }
 
-.projectView:hover {
-  cursor: pointer;
-}
-
-.projectView:hover .name {
+.projectView .name:hover {
   border-bottom: 1px dotted #666;
   margin-bottom: -1px;
+  cursor: pointer;
 }
 
 .projectView .name {
@@ -102,5 +99,36 @@ select {
   color: #9E9E9E;
 }
 
-.projectView .description {
+.projectView .addComment {
+  display: inline-block;
+  margin-left: 2px;
+  color: #75C1DF;
+  border-bottom: 1px dotted #75C1DF;
+  cursor: pointer;
+}
+
+.commentView {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.comments {
+  position: fixed;
+  width: 500px;
+  height: 500px;
+  left: 50%;
+  top: 50%;
+  margin-left: -250px;
+  margin-top: -250px;
+  background: white;
+  padding: 20px;
+  z-index: 99999;
+}
+
+.commentThread {
+  font-weight: bold;
 }
