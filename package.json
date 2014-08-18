@@ -11,7 +11,8 @@
     "domready": "^1.0.5",
     "mapbox.js": "^2.0.0",
     "multiline": "^0.3.4",
-    "node-csvify": "0.0.2"
+    "node-csvify": "0.0.2",
+    "point-in-polygon": "0.0.0"
   },
   "devDependencies": {
     "catw": "^0.2.0",
