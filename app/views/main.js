@@ -14,7 +14,7 @@ var npus = require('../npus.geojson');
 require('mapbox.js');
 
 module.exports = View.extend({
-  template: multiline(function(){/*
+  template: multiline(function(){/*@preserve
     <body>
       <header>
         <h1>ATL Infrastructure Map</h1>
@@ -36,7 +36,7 @@ module.exports = View.extend({
 
       <div id="map"></div>
     </body>
-  */}),
+  */console.log();}),
   
   initialize: function() {
     this.collection = new Projects(data, { parse: true });

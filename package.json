@@ -12,7 +12,8 @@
     "mapbox.js": "^2.0.0",
     "multiline": "^0.3.4",
     "node-csvify": "0.0.2",
-    "point-in-polygon": "0.0.0"
+    "point-in-polygon": "0.0.0",
+    "uglify-js": "^2.4.15"
   },
   "devDependencies": {
     "catw": "^0.2.0",
@@ -26,11 +27,12 @@
   },
   "scripts": {
     "watch-css": "catw 'styles/*.css' -o build/bundle.css -v",
-    "watch-js": "watchify app/*.js -o build/bundle.js -dv",
+    "watch-js": "watchify app/app.js -o build/bundle.js -dv",
     "watch": "npm run watch-css & npm run watch-js",
     "build-css": "catw 'styles/*.css' > build/bundle.css",
-    "build-js": "browserify browser/*.js > build/bundle.js",
+    "build-js": "browserify app/app.js | uglifyjs -c --comments > build/bundle.js",
     "build": "npm run build-css && npm run build-js",
+    "release": "npm build && bin/release.sh",
     "start": "npm run watch & http-server"
   }
 }
