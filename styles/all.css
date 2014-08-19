@@ -127,6 +127,8 @@ select {
   background: white;
   padding: 20px;
   z-index: 99999;
+  line-height: 24px;
+  overflow: auto;
 }
 
 .commentThread {

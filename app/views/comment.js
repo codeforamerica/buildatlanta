@@ -6,6 +6,7 @@ module.exports = View.extend({
     <div class="commentView">
       <div class="comments">
         <div class="commentThread" role="name"></div>
+        <div role="description" class="description"></div>
         <div id="disqus_thread"></div>
       </div>
     </div>
@@ -13,6 +14,7 @@ module.exports = View.extend({
 
   bindings: {
     'model.name': '[role=name]',
+    'model.description': '[role=description]',
   },
 
   events: {
