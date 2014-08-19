@@ -18,5 +18,5 @@ npm start
 Pull up your socks, then:
 
 ```console
-npm release
+npm run release
 ```
