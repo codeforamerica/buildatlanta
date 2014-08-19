@@ -32,7 +32,7 @@
     "build-css": "catw 'styles/*.css' > build/bundle.css",
     "build-js": "browserify app/app.js | uglifyjs -c --comments > build/bundle.js",
     "build": "npm run build-css && npm run build-js",
-    "release": "npm build && bin/release.sh",
+    "release": "npm run build && bin/release.sh",
     "start": "npm run watch & http-server"
   }
 }
