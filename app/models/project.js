@@ -53,8 +53,10 @@ module.exports = Model.extend({
       lng = config.map.center[1];
     }
 
+    var tempId = resp['Project Name'] + resp['Project Description'].substring(0, 10);
 
     return {
+      id: tempId,
       name: resp['Project Name'],
       description: resp['Project Description'],
       cost: accounting.unformat(resp['Project Cost Estimate']),
