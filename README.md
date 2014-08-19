@@ -1,6 +1,6 @@
 # Build Atlanta
 
-See and vote on infrastructure projects in Atlanta.
+See and comment on infrastructure projects in Atlanta.
 
 ## Developing Locally
 
@@ -11,4 +11,12 @@ Then:
 ```console
 npm install
 npm start
+```
+
+## Deploying to Github Pages
+
+Pull up your socks, then:
+
+```console
+npm release
 ```
