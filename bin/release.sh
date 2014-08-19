@@ -7,7 +7,8 @@ branch=$(git branch | sed -n -e 's/^\* \(.*\)/\1/p')
 # Only push this update to the server if the current branch is the Master branch
 if [ "$branch" == "master" ]
 then
-  git checkout gh-pages
+  git branch -D gh-pages
+  git checkout -b gh-pages
   git add build/bundle.css -f
   git add build/bundle.js -f
   git commit -m "deploy at `git log | head -c15`"
