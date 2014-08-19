@@ -1,4 +1,5 @@
 var View = require('ampersand-view');
+var CommentView = require('./comment');
 
 module.exports = View.extend({
   insertSelf: true,
@@ -12,7 +13,7 @@ module.exports = View.extend({
 
     marker.addTo(window.L.mapInstance);
     marker.on('click', function() {
-      this.model.trigger('focus');
+      this.openComments();
     }, this);
 
     return this;
@@ -20,6 +21,11 @@ module.exports = View.extend({
 
   centerMarker: function() {
     window.L.mapInstance.panTo(this.model.latlng);
+  },
+
+  openComments: function() {
+    var commentView = new CommentView({ model: this.model });
+    this.renderSubview(commentView, document.body);
   },
 
   remove: function() {
