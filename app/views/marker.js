@@ -9,8 +9,9 @@ module.exports = View.extend({
   },
   
   render: function() {
-    var marker = this.marker = window.L.marker(this.model.latlng);
+    if (!this.model.latlng) return;
 
+    var marker = this.marker = window.L.marker(this.model.latlng);
     marker.addTo(window.L.mapInstance);
     marker.on('click', function() {
       this.openComments();
@@ -29,7 +30,7 @@ module.exports = View.extend({
   },
 
   remove: function() {
-    window.L.mapInstance.removeLayer(this.marker);
+    if (this.marker) window.L.mapInstance.removeLayer(this.marker);
     View.prototype.remove.apply(this, arguments);
   },
 });

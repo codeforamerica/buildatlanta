@@ -4,7 +4,7 @@ var config = require('../config.js');
 var Projects = require('../models/projects.js');
 var ProjectView = require('./project.js');
 var MarkerView = require('./marker.js');
-var data = require('../data.csv');
+var data = require('../data-geocoded.csv');
 var SubCollection = require('ampersand-subcollection');
 var _ = require('underscore');
 var accounting = require('accounting');
@@ -42,7 +42,7 @@ module.exports = View.extend({
     this.collection = new Projects(data, { parse: true });
 
     var boundFilter = _.bind(this.filter, this);
-    this.filtered = new SubCollection(this.collection, { filter: boundFilter, limit: 100 });
+    this.filtered = new SubCollection(this.collection, { filter: boundFilter, limit: 150 });
 
     // Keep a seperate subcollection with no limit to enable cost summaries
     this.filteredAll = new SubCollection(this.collection, { filter: boundFilter });

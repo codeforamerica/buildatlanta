@@ -13,6 +13,18 @@ npm install
 npm start
 ```
 
+## Updating the included data
+
+Replace `app/data.csv` with the latest version of the data, making sure the column fields have the same name.
+
+Then:
+
+```console
+npm run geocode
+```
+
+This will produce a new `app/data-geocoded.csv` file, which is used by the app as a data source.
+
 ## Deploying to Github Pages
 
 Pull up your socks, then:

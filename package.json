@@ -9,11 +9,13 @@
     "ampersand-view": "^6.0.9",
     "browserify": "^5.9.1",
     "domready": "^1.0.5",
+    "geocoder": "^0.2.0",
+    "limits.js": "^0.1.4",
     "mapbox.js": "^2.0.0",
     "multiline": "^0.3.4",
     "node-csvify": "0.0.2",
-    "point-in-polygon": "0.0.0",
-    "uglify-js": "^2.4.15"
+    "uglify-js": "^2.4.15",
+    "ya-csv": "^0.9.3"
   },
   "devDependencies": {
     "catw": "^0.2.0",
@@ -33,6 +35,7 @@
     "build-js": "browserify app/app.js | uglifyjs -c --comments > build/bundle.js",
     "build": "npm run build-css && npm run build-js",
     "release": "npm run build && bin/release.sh",
-    "start": "npm run watch & http-server"
+    "start": "npm run watch & http-server",
+    "geocode": "node bin/geocode.js"
   }
 }
