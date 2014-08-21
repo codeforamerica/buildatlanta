@@ -55,6 +55,13 @@ reader.addListener('data', function(record) {
 
       console.log('.');
       var latlng = data.results[0].geometry.location;
+
+      // Points that are at the exact center of the city didn't geocode correctly
+      if (latlng.lat === 33.7489954 && latlng.lng === -84.3879824) {
+        writer.writeRecord(_.values(record));
+        return;
+      }
+
       record.LATITUDE = latlng.lat;
       record.LONGITUDE = latlng.lng;
       writer.writeRecord(_.values(record));
