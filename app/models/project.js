@@ -33,7 +33,8 @@ module.exports = Model.extend({
       if (resp['Neighborhood ' + i]) neighborhoods.push(resp['Neighborhood ' + i]);
     }
 
-    var latlng = (resp['LATITUDE'] ? [resp['LATITUDE'], resp['LONGITUDE']] : undefined;
+    var latlng;
+    if (resp['LATITUDE']) latlng = [resp['LATITUDE'], resp['LONGITUDE']];
 
     return {
       id: resp.id,
