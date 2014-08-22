@@ -27,6 +27,10 @@ module.exports = View.extend({
       </header>
 
       <div class="content">
+        <div class="links">
+          <a href="http://www.atlantaga.gov/infrastructure" target="_blank">About Atlanta Infrastructure</a> • 
+          <a href="http://www.atlantaga.gov/modules/showdocument.aspx?documentid=6033" target="_blank">Commenting Policy</a>
+        </div>
         <div class="summary">
           <div><span role="count"></span> proposed projects</div>
           <div>Estimated cost: <span role="cost"></span></div>
