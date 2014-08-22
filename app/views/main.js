@@ -37,6 +37,7 @@ module.exports = View.extend({
         </div>
         <div role="projects"></div>
       </div>
+      <div class="love">This site made with &#9825; by <a href="http://www.codeforamerica.org/" target="_blank">Code for America</a> and <a href="https://github.com/codeforamerica/buildatlanta" target="_blank">released under the MIT license</a>.</div>
 
       <div id="map"></div>
     </body>
