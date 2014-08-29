@@ -1,9 +1,8 @@
 var View = require('ampersand-view');
-var multiline = require('multiline');
 var CommentView = require('./comment');
 
 module.exports = View.extend({
-  template: multiline(function(){/*@preserve
+  template: `
     <div class="projectView">
       <div role="name" class="name"></div>
       <div class="details">
@@ -12,7 +11,7 @@ module.exports = View.extend({
       </div>
       <div role="description" class="description"></div>
     </div>
-  */console.log();}),
+  `,
 
   bindings: {
     'model.name': '[role=name]',

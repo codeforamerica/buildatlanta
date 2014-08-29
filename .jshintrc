@@ -50,5 +50,7 @@
   "undef": true,
 
   // Warn when variables are defined but never used.
-  "unused": true
+  "unused": true,
+
+  "esnext": true
 }

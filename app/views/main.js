@@ -1,5 +1,4 @@
 var View = require('ampersand-view');
-var multiline = require('multiline');
 var config = require('../config.js');
 var Projects = require('../models/projects.js');
 var ProjectView = require('./project.js');
@@ -14,7 +13,7 @@ var npus = require('../npus.geojson');
 require('mapbox.js');
 
 module.exports = View.extend({
-  template: multiline(function(){/*@preserve
+  template: `
     <body>
       <header>
         <h1>ATL Infrastructure Map</h1>
@@ -41,7 +40,7 @@ module.exports = View.extend({
 
       <div id="map"></div>
     </body>
-  */console.log();}),
+  `,
   
   initialize: function() {
     this.collection = new Projects(data, { parse: true });
