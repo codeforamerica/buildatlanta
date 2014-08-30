@@ -15,6 +15,7 @@
     "mapbox.js": "^2.0.0",
     "node-csvify": "0.0.2",
     "uglify-js": "^2.4.15",
+    "underscore": "^1.6.0",
     "ya-csv": "^0.9.3"
   },
   "devDependencies": {
