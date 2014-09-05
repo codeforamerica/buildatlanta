@@ -4,7 +4,8 @@ var Projects = require('../models/projects.js');
 var ProjectView = require('./project.js');
 var MarkerView = require('./marker.js');
 var AdditionalView = require('./additional.js');
-var data = require('../data-geocoded.csv');
+var projectsData = require('../data/projects-geocoded.csv');
+var additionalProjectsData = require('../data/additional-projects.csv');
 var SubCollection = require('ampersand-subcollection');
 var _ = require('underscore');
 var accounting = require('accounting');
@@ -45,7 +46,8 @@ module.exports = View.extend({
   `,
   
   initialize: function() {
-    this.collection = new Projects(data, { parse: true });
+    this.collection = new Projects(projectsData, { parse: true });
+    this.additionalProjects = new Projects(additionalProjectsData);
 
     var boundFilter = _.bind(this.filter, this);
     this.filtered = new SubCollection(this.collection, { filter: boundFilter, limit: 150 });
@@ -169,7 +171,7 @@ module.exports = View.extend({
   },
 
   showAdditional: function() {
-    var additionalView = new AdditionalView();
+    var additionalView = new AdditionalView({ collection: this.additionalProjects });
     this.renderSubview(additionalView, document.body);
   },
 });

@@ -13,6 +13,7 @@ module.exports = Model.extend({
     npus: ['array', true, undefined],
     neighborhoods: ['array', true, undefined],
     latlng: ['array', false, undefined],
+    image: ['string', false, ''],
   },
 
   derived: {

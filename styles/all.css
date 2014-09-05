@@ -165,13 +165,13 @@ select {
   border-bottom: 1px dotted #ADADAD;
 }
 
-.half {
+.commentView .projectView {
   width: 45%;
   display: inline-block;
   padding: 10px;
   vertical-align: top;
 }
 
-.half img {
+.projectView img {
   max-width: 100%;
 }

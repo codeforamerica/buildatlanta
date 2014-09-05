@@ -9,8 +9,8 @@ var geocoder = require('geocoder');
 var limits = require('limits.js');
 var path = require('path');
 
-var inputFile = path.join(__dirname, '../app/data.csv');
-var outputFile = path.join(__dirname, '../app/data-geocoded.csv');
+var inputFile = path.join(__dirname, '../app/data/projects.csv');
+var outputFile = path.join(__dirname, '../app/data/projects-geocoded.csv');
 
 var reader = csv.createCsvFileReader(inputFile, {
   columnsFromHeader: true,
