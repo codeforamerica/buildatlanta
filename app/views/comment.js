@@ -26,11 +26,12 @@ module.exports = View.extend({
     event.stopImmediatePropagation();
   },
 
-  loadDisqus: function(id) {
+  loadDisqus: function(id, name) {
     window.DISQUS.reset({
       reload: true,
       config: function () {  
-        this.page.identifier = id;  
+        this.page.identifier = id;
+        this.page.title = name;
         this.page.url = 'http://infrastructuremap.org/#!' + id;
       }
     });
@@ -40,10 +41,11 @@ module.exports = View.extend({
     this.renderWithTemplate(this);
 
     var id = this.model.id;
+    var name = this.model.name;
     var loadDisqus = this.loadDisqus;
 
-    setTimeout(function() { loadDisqus(id); }, 0);
+    setTimeout(function() { loadDisqus(id, name); }, 0);
 
     return this;
-  }
+  },
 });
