@@ -30,7 +30,7 @@ module.exports = View.extend({
         <div class="links">
           <a href="http://www.atlantaga.gov/infrastructure" target="_blank">About</a> • 
           <a href="http://www.atlantaga.gov/modules/showdocument.aspx?documentid=6033" target="_blank">Commenting Policy</a> • 
-          <a class="linklike" role="showAdditional">Additional Projects</a>
+          <a class="linklike" role="showAdditional">Additional Programs</a>
         </div>
         <div class="summary">
           <div><span role="count"></span> proposed projects</div>
