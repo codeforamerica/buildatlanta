@@ -3,6 +3,7 @@ var config = require('../config.js');
 var Projects = require('../models/projects.js');
 var ProjectView = require('./project.js');
 var MarkerView = require('./marker.js');
+var AdditionalView = require('./additional.js');
 var data = require('../data-geocoded.csv');
 var SubCollection = require('ampersand-subcollection');
 var _ = require('underscore');
@@ -27,8 +28,9 @@ module.exports = View.extend({
 
       <div class="content">
         <div class="links">
-          <a href="http://www.atlantaga.gov/infrastructure" target="_blank">About Atlanta Infrastructure</a> • 
-          <a href="http://www.atlantaga.gov/modules/showdocument.aspx?documentid=6033" target="_blank">Commenting Policy</a>
+          <a href="http://www.atlantaga.gov/infrastructure" target="_blank">About</a> • 
+          <a href="http://www.atlantaga.gov/modules/showdocument.aspx?documentid=6033" target="_blank">Commenting Policy</a> • 
+          <a class="linklike" role="showAdditional">Additional Projects</a>
         </div>
         <div class="summary">
           <div><span role="count"></span> proposed projects</div>
@@ -54,7 +56,8 @@ module.exports = View.extend({
 
   events: {
     'keyup [role="searchbox"]': 'updateFilter',
-    'change select': 'updateFilter'
+    'change select': 'updateFilter',
+    'click [role="showAdditional"]': 'showAdditional',
   },
 
   render: function() {
@@ -124,7 +127,10 @@ module.exports = View.extend({
   },
 
   filter: function(item) {
-    var queryMatch = true, npuMatch = true, categoryMatch = true, neighborhoodMatch = true;
+    var queryMatch = true;
+    var npuMatch = true;
+    var categoryMatch = true;
+    var neighborhoodMatch = true;
 
     if (this.filters.text) {
       var name = item.get('name').toLowerCase();
@@ -160,5 +166,10 @@ module.exports = View.extend({
     var totalCost = this.filteredAll.reduce(function(prev, item) { return item.cost + prev; }, 0);
     this.getByRole('cost').innerHTML = accounting.formatMoney(totalCost, { precision: 0 });
     this.getByRole('count').innerHTML = this.filteredAll.length;
+  },
+
+  showAdditional: function() {
+    var additionalView = new AdditionalView();
+    this.renderSubview(additionalView, document.body);
   },
 });

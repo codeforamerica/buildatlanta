@@ -76,11 +76,13 @@ select {
   margin-top: -5px;
 }
 
-.links a {
+.links a, .linklike {
   color: #467396;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
-.links a:hover {
+.links a:hover, .linklike:hover {
   color: #008FFF;
 }
 
@@ -161,4 +163,15 @@ select {
   color: #838383;
   text-decoration: none;
   border-bottom: 1px dotted #ADADAD;
+}
+
+.half {
+  width: 45%;
+  display: inline-block;
+  padding: 10px;
+  vertical-align: top;
+}
+
+.half img {
+  max-width: 100%;
 }
