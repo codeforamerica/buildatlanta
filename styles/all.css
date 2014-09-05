@@ -71,9 +71,15 @@ select {
   border: 1px solid rgba(255, 255, 255, 0.6);
 }
 
+.context {
+  margin-bottom: 8px;
+  line-height: 24px;
+  margin-top: -6px;
+}
+
 .links {
   margin-bottom: 20px;
-  margin-top: -5px;
+  font-size: 14px;
 }
 
 .links a, .linklike {
@@ -175,3 +181,4 @@ select {
 .projectView img {
   max-width: 100%;
 }
+

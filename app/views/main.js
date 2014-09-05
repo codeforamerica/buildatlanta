@@ -28,8 +28,9 @@ module.exports = View.extend({
       </header>
 
       <div class="content">
+        <div class="context">The City of Atlanta expects to invest $300 million dollars to build a better city. Explore the map to see how the money is being spent and share your thoughts.</div>
         <div class="links">
-          <a href="http://www.atlantaga.gov/infrastructure" target="_blank">About</a> • 
+          <a href="http://www.atlantaga.gov/infrastructure" target="_blank">Read more</a> • 
           <a href="http://www.atlantaga.gov/modules/showdocument.aspx?documentid=6033" target="_blank">Commenting Policy</a> • 
           <a class="linklike" role="showAdditional">Additional Programs</a>
         </div>
