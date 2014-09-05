@@ -37,10 +37,12 @@ reader.addListener('data', function(record) {
   }
   else if (address === '' && record['From']) {
     address = record['Project Name'] + ' and ' + record['From'];
+  } else if (record['Project Name'].indexOf('@') > -1) {
+    address = record['Project Name'];
   }
 
   if (!address) {
-    console.log('!');
+    process.stdout.write('!');
     writer.writeRecord(_.values(record));
     return;
   }
@@ -48,12 +50,12 @@ reader.addListener('data', function(record) {
   queue.push(function() {
     geocoder.geocode(address + ', Atlanta, GA', function(err, data) {
       if (!data) {
-        console.log('?');
+        process.stdout.write('?');
         writer.writeRecord(_.values(record));
         return;
       }
 
-      console.log('.');
+      process.stdout.write('.');
       var latlng = data.results[0].geometry.location;
 
       // Points that are at the exact center of the city didn't geocode correctly
