@@ -4,6 +4,7 @@ var Projects = require('../models/projects.js');
 var ProjectView = require('./project.js');
 var MarkerView = require('./marker.js');
 var AdditionalView = require('./additional.js');
+var DisclaimerView = require('./disclaimer.js');
 var projectsData = require('../data/projects-geocoded.csv');
 var additionalProjectsData = require('../data/additional-projects.csv');
 var SubCollection = require('ampersand-subcollection');
@@ -31,7 +32,7 @@ module.exports = View.extend({
         <div class="context">The City of Atlanta is investing $250 million dollars to build a better city. Explore the map to see potential projects and programs and share your thoughts.</div>
         <div class="links">
           <a href="http://www.atlantaga.gov/infrastructure" target="_blank">Read more</a> • 
-          <a href="http://www.atlantaga.gov/modules/showdocument.aspx?documentid=6033" target="_blank">Commenting Policy</a> • 
+          <a class="linklike" role="showDisclaimer">Disclaimer & Policy</a> • 
           <a class="linklike" role="showAdditional">Additional Programs</a>
         </div>
         <div class="summary">
@@ -61,6 +62,7 @@ module.exports = View.extend({
     'keyup [role="searchbox"]': 'updateFilter',
     'change select': 'updateFilter',
     'click [role="showAdditional"]': 'showAdditional',
+    'click [role="showDisclaimer"]': 'showDisclaimer',
   },
 
   render: function() {
@@ -174,5 +176,10 @@ module.exports = View.extend({
   showAdditional: function() {
     var additionalView = new AdditionalView({ collection: this.additionalProjects });
     this.renderSubview(additionalView, document.body);
+  },
+
+  showDisclaimer: function() {
+    var disclaimerView = new DisclaimerView();
+    this.renderSubview(disclaimerView, document.body);
   },
 });
