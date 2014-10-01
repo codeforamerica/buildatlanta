@@ -1,7 +1,7 @@
 id,name,description,image
-900,OEAM-ADA,"Department of Justice (DOJ)/ADA compliance & other repairs at City buildings.",/images/oeam.jpg
-901,Curbing,"Installation and repair of priority curbing",/images/curb.png
-902,Sidewalks,"Sidewalk DOJ/ADA ramp repair compliance",/images/sidewalk.jpg
-903,Street Lights,"High priority lighting repair and street light LED conversions",/images/streetlight.jpg
-904,Traffic Signs,"Upgrade of MUTCD size and lettering requirements for street name signs.",/images/trafficsign.gif
+900,ADA,"Department of Justice (DOJ)/ADA compliance & other repairs at City buildings. The City of Atlanta has an agreement with the Department of Justice (DOJ) to implement ADA compliance repairs in all City buildings.",/images/ada.png
+901,Curbing,"Installation and repair of priority curbing. Curbing repair locations will be selected with identified street resurfacing projects to provide drainage improvements.",/images/curb.png
+902,Sidewalks,"Sidewalk DOJ/ADA ramp repair compliance. This agreement requires the City to provide ADA compliant access to all street improvements completed from 1992 to present. Sidewalk repair locations will be selected with identified street resurfacing, streets construction, curbing, ADA ramp, and signal repair projects.",/images/sidewalk.png
 905,Percent for Art,"Per City Ordinance a minimum of 1.5% of project construction cost will be set aside for public art.",/images/art.jpg
+903,Street Lights,"High priority lighting repair and street light LED conversions. Includes missing and damages poles, missing wiring, shrouds, and plates.",/images/streetlight.jpg
+904,Traffic Signs,"Upgrade of MUTCD size and lettering requirements for street name signs.",/images/trafficsign.gif
