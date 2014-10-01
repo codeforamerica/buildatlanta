@@ -43,7 +43,7 @@ module.exports = Model.extend({
       description: resp['Project Description'],
       cost: accounting.unformat(resp['Funding Needed']),
       priority: resp['Project Priority'],
-      category: resp['Category'],
+      category: resp['Subcategory'],
       npus: npus,
       neighborhoods: neighborhoods,
       latlng: latlng,
