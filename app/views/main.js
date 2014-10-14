@@ -5,12 +5,14 @@ var ProjectView = require('./project.js');
 var MarkerView = require('./marker.js');
 var AdditionalView = require('./additional.js');
 var DisclaimerView = require('./disclaimer.js');
+var ThankYouView = require('./thankyou.js');
 var projectsData = require('../data/projects-geocoded.csv');
 var additionalProjectsData = require('../data/additional-projects.csv');
 var SubCollection = require('ampersand-subcollection');
 var _ = require('underscore');
 var accounting = require('accounting');
 var npus = require('../npus.geojson');
+
 
 // Automatically attached to window.L
 require('mapbox.js');
@@ -87,6 +89,9 @@ module.exports = View.extend({
     this.renderCollection(this.filtered, MarkerView);
 
     this.updateFilter();
+
+    var thanksView = new ThankYouView();
+    this.renderSubview(thanksView, document.body);
 
     return this;
   },
