@@ -90,8 +90,8 @@ module.exports = View.extend({
 
     this.updateFilter();
 
-    var thanksView = new ThankYouView();
-    this.renderSubview(thanksView, document.body);
+    // var thanksView = new ThankYouView();
+    // this.renderSubview(thanksView, document.body);
 
     return this;
   },
