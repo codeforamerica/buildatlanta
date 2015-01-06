@@ -1,0 +1,191 @@
+
+/* http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+/* apply a natural box layout model to all elements */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: HelveticaNeue, Helvetica, sans-serif;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 50px;
+  background: #2780CA;
+  color: rgba(255, 255, 255, 0.9);
+  padding: 5px 10px;
+  padding-top: 3px;
+  overflow: hidden;
+}
+
+header h1 {
+  display: inline-block;
+  margin: 10px 0 0;
+  font-size: 20px;
+}
+
+header nav {
+  display: inline-block;
+  float: right;
+}
+
+header .searchbox {
+  border-radius: 20px;
+  border: 1px solid #B1B1B1;
+  margin-left: 8px;
+  color: #000;
+  padding: 5px 10px;
+  font-size: 14px;
+  outline: none;
+  width: 200px;
+}
+
+#map {
+  position: fixed;
+  top: 50px;
+  right: 0;
+  bottom: 0;
+  width: 50%;
+}
+
+.content {
+  margin-right: 50%;
+  margin-top: 50px;
+  padding: 20px 30px;
+}
+
+select {
+  background: #2780CA;
+  color: rgba(255, 255, 255, 0.9);
+  width: 160px;
+  height: 26px;
+  font-size: 14px;
+  background: none;
+  margin-top: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+select option {
+  color: black;
+}
+
+.context {
+  margin-bottom: 8px;
+  line-height: 24px;
+  margin-top: -6px;
+}
+
+.links {
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.links a, .linklike {
+  color: #467396;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.links a:hover, .linklike:hover {
+  color: #008FFF;
+}
+
+.summary {
+  font-size: 16px;
+  line-height: 27px;
+  background: #DAEBF5;
+  margin: -5px -10px;
+  padding: 10px 15px;
+  margin-bottom: 5px;
+}
+
+.projectView {
+  padding: 7px 0;
+  font-size: 15px;
+  line-height: 21px;
+}
+
+.projectView .name:hover {
+  border-bottom: 1px dotted #666;
+  margin-bottom: -1px;
+  cursor: pointer;
+}
+
+.projectView .name {
+  font-weight: bold;
+  display: inline-block;
+}
+
+.projectView .details {
+  color: #9E9E9E;
+}
+
+.projectView .addComment {
+  display: inline-block;
+  margin-left: 2px;
+  color: #75C1DF;
+  border-bottom: 1px dotted #75C1DF;
+  cursor: pointer;
+}
+
+.commentView {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.comments {
+  position: fixed;
+  width: 500px;
+  height: 500px;
+  left: 50%;
+  top: 50%;
+  margin-left: -250px;
+  margin-top: -250px;
+  background: white;
+  padding: 20px;
+  z-index: 99999;
+  line-height: 24px;
+  overflow: auto;
+}
+
+.commentThread {
+  font-weight: bold;
+}
+
+.love {
+  padding: 0 30px;
+  padding-bottom: 20px;
+  font-size: 13px;
+  color: #838383;
+}
+
+.love a {
+  color: #838383;
+  text-decoration: none;
+  border-bottom: 1px dotted #ADADAD;
+}
+
+.commentView .projectView {
+  width: 45%;
+  display: inline-block;
+  padding: 10px;
+  vertical-align: top;
+}
+
+.projectView img {
+  max-width: 100%;
+}
+
+.thankyou {
+  font-size: 15px;
+}
