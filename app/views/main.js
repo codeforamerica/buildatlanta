@@ -5,6 +5,7 @@ var ProjectView = require('./project.js');
 var MarkerView = require('./marker.js');
 var AdditionalView = require('./additional.js');
 var DisclaimerView = require('./disclaimer.js');
+var PublicView = require('./public.js');
 var ThankYouView = require('./thankyou.js');
 var projectsData = require('../data/projects-geocoded.csv');
 var additionalProjectsData = require('../data/additional-projects.csv');
@@ -31,16 +32,12 @@ module.exports = View.extend({
       </header>
 
       <div class="content">
-        <div class="context">The City of Atlanta is investing $150-$250 million dollars to build a better city. Explore the map to see potential projects and share your thoughts.</div>
+        <div class="context">The City of Atlanta is investing $250 million dollars to build a better city. Explore the map to see potential projects and share your thoughts.</div>
         <div class="links">
           <a href="http://www.atlantaga.gov/infrastructure" target="_blank">Read more</a> • 
           <a class="linklike" role="showDisclaimer">Disclaimer & Policy</a> • 
           <a class="linklike" role="showAdditional">Additional Programs</a> • 
-          <a href="http://www.atlantaga.gov/index.aspx?page=1145" target="_blank">Public Information Meeting Schedule</a>
-<<<<<<< HEAD
-
-=======
->>>>>>> 47027cd73ff33c30af689b62e8da377c7176f981
+          <a class="linklike" role="showPublic">Public Information Meeting Schedule</a>
         </div>
         <div class="summary">
           <div><span role="count"></span> proposed projects</div>
@@ -59,7 +56,7 @@ module.exports = View.extend({
     this.additionalProjects = new Projects(additionalProjectsData);
 
     var boundFilter = _.bind(this.filter, this);
-    this.filtered = new SubCollection(this.collection, { filter: boundFilter, limit: 150 });
+    this.filtered = new SubCollection(this.collection, { filter: boundFilter, limit: 300 });
 
     // Keep a seperate subcollection with no limit to enable cost summaries
     this.filteredAll = new SubCollection(this.collection, { filter: boundFilter });
@@ -70,6 +67,7 @@ module.exports = View.extend({
     'change select': 'updateFilter',
     'click [role="showAdditional"]': 'showAdditional',
     'click [role="showDisclaimer"]': 'showDisclaimer',
+		'click [role="showPublic"]': 'showPublic',
   },
 
   render: function() {
@@ -191,5 +189,10 @@ module.exports = View.extend({
   showDisclaimer: function() {
     var disclaimerView = new DisclaimerView();
     this.renderSubview(disclaimerView, document.body);
+  },
+
+	showPublic: function() {
+    var publicView = new PublicView();
+    this.renderSubview(publicView, document.body);
   },
 });
