@@ -32,13 +32,8 @@ reader.addListener('data', function(record) {
   var address = record.address;
 
   // Special cases for excel sheet format
-  if (address === 'the intersection.') {
-    address = record['Project Name'];
-  }
-  else if (address === '' && record['From']) {
-    address = record['Project Name'] + ' and ' + record['From'];
-  } else if (record['Project Name'].indexOf('@') > -1) {
-    address = record['Project Name'];
+  if (address === '' && record['From']) {
+    address = record['From'] + ', Atlanta, GA';
   }
 
   if (!address) {
@@ -48,13 +43,17 @@ reader.addListener('data', function(record) {
   }
 
   queue.push(function() {
-    geocoder.geocode(address + ', Atlanta, GA', function(err, data) {
+    geocoder.geocode(address, function(err, data) {
       if (!data) {
         process.stdout.write('?');
         writer.writeRecord(_.values(record));
         return;
       }
-
+			if (!data.results[0].geometry) {
+        process.stdout.write('?');
+        writer.writeRecord(_.values(record));
+        return;
+      }
       process.stdout.write('.');
       var latlng = data.results[0].geometry.location;
 
