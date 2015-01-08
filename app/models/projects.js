@@ -4,7 +4,7 @@ var _ = require('underscore');
 
 module.exports = Collection.extend({
   model: Project,
-  comparator: 'name',
+  comparator: 'order',
 
   summarize: function() {
     var npus = [];

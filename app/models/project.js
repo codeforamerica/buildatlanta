@@ -5,7 +5,8 @@ var accounting = require('accounting');
 module.exports = Model.extend({
   props: {
     id: 'any',
-    name: ['string', true, ''],
+    order: ['number', true, 0],
+		name: ['string', true, ''],
     description: ['string', true, ''],
     cost: ['number', true, 0],
     priority: ['string', true, ''],
@@ -39,7 +40,8 @@ module.exports = Model.extend({
 
     return {
       id: resp.id,
-      name: resp['Project Name'],
+      order: accounting.unformat(resp['order']),
+			name: resp['Project Name'],
       description: resp['Project Description'],
       cost: accounting.unformat(resp['Funding Needed']),
       priority: resp['Project Priority'],
