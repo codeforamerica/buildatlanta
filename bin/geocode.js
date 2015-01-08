@@ -49,7 +49,7 @@ reader.addListener('data', function(record) {
         writer.writeRecord(_.values(record));
         return;
       }
-			if (!data.results[0].geometry) {
+			if (!data.results[0]) {
         process.stdout.write('?');
         writer.writeRecord(_.values(record));
         return;
