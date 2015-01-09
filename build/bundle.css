@@ -204,8 +204,8 @@ select option {
 }
 
 .schedule_date span {
-	border-bottom: 1px dashed #000;
+	border-bottom: 1px dashed #666;
 }
-.schedule_time span {
+/*.schedule_time span {
 	border-bottom: 1px dashed #B4B4B4;
-}
+}*/
