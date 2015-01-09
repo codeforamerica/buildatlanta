@@ -16,8 +16,8 @@ header {
   top: 0;
   right: 0;
   left: 0;
-	z-index: 10;
   height: 50px;
+	z-index: 10;
   background: #2780CA;
   color: rgba(255, 255, 255, 0.9);
   padding: 5px 10px;
@@ -197,4 +197,15 @@ select option {
 
 .thankyou {
   font-size: 15px;
+}
+
+.schedule_date {
+	padding-top: 10px;
+}
+
+.schedule_date span {
+	border-bottom: 1px dashed #000;
+}
+.schedule_time span {
+	border-bottom: 1px dashed #B4B4B4;
 }

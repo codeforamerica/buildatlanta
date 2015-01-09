@@ -1,5 +1,5 @@
 var View = require('ampersand-view');
-var ProjectView = require('./project');
+var ProjectView = require('./projectaddition');
 
 module.exports = View.extend({
   template: `
