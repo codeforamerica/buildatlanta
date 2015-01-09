@@ -4,6 +4,7 @@ var CommentView = require('./comment');
 module.exports = View.extend({
   template: `
     <div class="projectView">
+			<div role="sl" class="projectSerial"></div>
       <img role="image"></img>
       <div role="name" class="name"></div>
       <div class="details">
@@ -15,6 +16,7 @@ module.exports = View.extend({
   `,
 
   bindings: {
+    'model.order': '[role=sl]',
     'model.name': '[role=name]',
     'model.description': '[role=description]',
     'model.image': [

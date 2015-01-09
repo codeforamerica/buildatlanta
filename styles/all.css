@@ -106,9 +106,18 @@ select option {
 }
 
 .projectView {
-  padding: 7px 0;
+  padding: 7px 0 7px 32px;
   font-size: 15px;
   line-height: 21px;
+	position: relative;
+	z-index: -1;
+}
+.projectSerial {
+	position: absolute;
+	left: 0px;
+	top: 7px;
+	width: 28px;
+	text-align: center;
 }
 
 .projectView .name:hover {

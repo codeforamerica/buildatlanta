@@ -17,6 +17,7 @@ header {
   right: 0;
   left: 0;
   height: 50px;
+	z-index: 10;
   background: #2780CA;
   color: rgba(255, 255, 255, 0.9);
   padding: 5px 10px;
@@ -106,9 +107,17 @@ select option {
 }
 
 .projectView {
-  padding: 7px 0;
+  padding: 7px 0 7px 32px;
   font-size: 15px;
   line-height: 21px;
+	position: relative;
+}
+.projectSerial {
+	position: absolute;
+	left: 0px;
+	top: 7px;
+	width: 28px;
+	text-align: center;
 }
 
 .projectView .name:hover {
