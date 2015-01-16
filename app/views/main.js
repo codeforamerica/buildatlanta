@@ -42,7 +42,7 @@ module.exports = View.extend({
         <div class="summary">
           <div><span role="count"></span> proposed Citywide projects</div>
           <div>Estimated cost: <span role="cost"></span></div>
-					<div>Numerous proposed Council District projects</div>
+					<div>Various Proposed Neighborhood Projects</div>
 					<div>Estimated cost: $78,845,620</div>
         </div>
         <div role="projects"></div>

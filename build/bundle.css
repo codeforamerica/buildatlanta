@@ -117,7 +117,7 @@ select option {
 	left: 0px;
 	top: 7px;
 	width: 28px;
-	text-align: center;
+	text-align: left;
 }
 
 .projectView .name:hover {
