@@ -106,6 +106,10 @@ select option {
   margin-bottom: 5px;
 }
 
+.summary .indent {
+	text-indent: 35px;
+}
+
 .projectView {
   padding: 7px 0 7px 32px;
   font-size: 15px;

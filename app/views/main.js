@@ -41,9 +41,9 @@ module.exports = View.extend({
         </div>
         <div class="summary">
           <div>229 proposed Citywide projects</div>
-          <div>Estimated cost: $179,369,503</div>
+          <div class="indent">Estimated cost: $179,369,503</div>
 					<div>Various Proposed Local Projects</div>
-					<div>Estimated cost: $70,630,497</div>
+					<div class="indent">Estimated cost: $70,630,497</div>
         </div>
         <div role="projects"></div>
       </div>
