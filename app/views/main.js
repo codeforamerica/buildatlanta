@@ -40,10 +40,10 @@ module.exports = View.extend({
           <a class="linklike" role="showPublic">Public Information Meeting Schedule</a>
         </div>
         <div class="summary">
-          <div><span role="count"></span> proposed Citywide projects</div>
-          <div>Estimated cost: <span role="cost"></span></div>
-					<div>Various Proposed Neighborhood Projects</div>
-					<div>Estimated cost: $78,845,620</div>
+          <div>229 proposed Citywide projects</div>
+          <div>Estimated cost: $179,369,503</div>
+					<div>Various Proposed Local Projects</div>
+					<div>Estimated cost: $70,630,497</div>
         </div>
         <div role="projects"></div>
       </div>
