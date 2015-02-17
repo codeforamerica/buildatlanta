@@ -177,9 +177,9 @@ module.exports = View.extend({
     this.filtered._runFilters();
     this.filteredAll._runFilters();
 
-    // Update the project count & filters
+    // Update the project count & filters 
     var totalCost = this.filteredAll.reduce(function(prev, item) { return item.cost + prev; }, 0);
-    this.getByRole('cost').innerHTML = accounting.formatMoney(totalCost, { precision: 0 });
+    //this.getByRole('cost').innerHTML = accounting.formatMoney(totalCost, { precision: 0 });
     this.getByRole('count').innerHTML = this.filteredAll.length;
   },
 
