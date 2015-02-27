@@ -34,16 +34,47 @@ module.exports = View.extend({
       <div class="content">
         <div class="context">The City of Atlanta is investing $250 million dollars to build a better city. Explore the map to see potential projects and share your thoughts.</div>
         <div class="links">
-          <a href="http://www.atlantaga.gov/infrastructure" target="_blank">Read more</a> • 
-          <a class="linklike" role="showDisclaimer">Disclaimer & Policy</a> • 
-          <a class="linklike" role="showAdditional">Additional Programs</a> • 
-          <a class="linklike" role="showPublic">Public Information Meeting Schedule</a>
+          <a href="http://www.atlantaga.gov/infrastructure" target="_blank">Read more</a> &bull; 
+          <a class="linklike" role="showDisclaimer">Disclaimer & Policy</a> &bull; 
+          <a class="linklike" role="showAdditional">Additional Programs</a> &bull; 
+          <a class="linklike" role="showPublic">Public Meetings and Displays</a>
         </div>
         <div class="summary">
-          <div>229 proposed Citywide projects</div>
-          <div class="indent">Estimated cost: $179,369,503</div>
-					<div>Various Proposed Local Projects</div>
-					<div class="indent">Estimated cost: $70,630,497</div>
+					<table border="0" class="estimated-costs">
+						<tr>
+							<th width="30%">&nbsp;</th>
+							<th widht="21%">Citywide</th>
+							<th widht="3%"></th>
+							<th widht="21%">Local</th>
+							<th widht="3%"></th>
+							<th widht="21%">Total</th>
+						</tr>
+						<tr>
+							<td><strong>Transportation Projects</strong></td>
+							<td>$134,515,175</td>
+							<td>+</td>
+							<td>$51,941,543</td>
+							<td>=</td>
+							<td>$186,546,718</td>
+						</tr>
+						<tr>
+							<td><strong>Municipal Facilities</strong></td>
+							<td>$44,854,328</td>
+							<td>+</td>
+							<td>$18,688,954</td>
+							<td>=</td>
+							<td>$63,543,282</td>
+						</tr>
+						<tr class="total-est">
+							<td><strong>Total</strong></td>
+							<td>$179,369,503</td>
+							<td>+</td>
+							<td>$70,630,497</td>
+							<td>=</td>
+							<td>$250,000,000*</td>
+						</tr>						
+					</table>
+					<p><small>* Note: Amount is strictly project related costs and excludes $2M for bond financing costs</small></p>
         </div>
         <div role="projects"></div>
       </div>
@@ -177,7 +208,7 @@ module.exports = View.extend({
     this.filtered._runFilters();
     this.filteredAll._runFilters();
 
-    // Update the project count & filters 
+    // Update the project count & filters
     var totalCost = this.filteredAll.reduce(function(prev, item) { return item.cost + prev; }, 0);
     //this.getByRole('cost').innerHTML = accounting.formatMoney(totalCost, { precision: 0 });
     this.getByRole('count').innerHTML = this.filteredAll.length;

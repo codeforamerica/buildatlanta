@@ -213,3 +213,33 @@ select option {
 /*.schedule_time span {
 	border-bottom: 1px dashed #B4B4B4;
 }*/
+
+.download-pdf {
+	display: block;
+	margin-top: 5px;
+}
+
+.download-pdf a {
+	font-size: 14px;
+	color: #467396;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.estimated-costs {
+	width: 100%;
+}
+
+.estimated-costs th, .estimated-costs td {
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+estimated-costs tr th:first-child, .estimated-costs tr td:first-child {
+	text-align: left;
+}
+
+.total-est td {
+	border-top: 1px dotted #6F90AA;
+}
