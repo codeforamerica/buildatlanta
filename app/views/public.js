@@ -60,7 +60,7 @@ module.exports = View.extend({
 				<p>Ben Hill Recreation Center<br />
 				2405 Fairburn Road, SW, Atlanta, GA 30331</p>
 
-				<p class="schedule_time"><span>6:00 PM &ndash; 8:00 PM</span></p>
+				<p class="schedule_time"><span>6:00 PM &ndash; 8:00 PM</span><span class="download-pdf"><a href="pdf/Meeting-8.pdf" target="_blank">Download Display Boards (Archive)</a></span></p>
 
 				<p class="schedule_date"><span>February 17, 2015</span></p>
 
@@ -68,28 +68,28 @@ module.exports = View.extend({
 				Callaway Auditorium - 7th Floor<br />
 				2020 Peachtree Road, NW, Atlanta, GA 30309</p>
 
-				<p class="schedule_time"><span>6:00 PM &ndash; 8:00 PM</span></p>
+				<p class="schedule_time"><span>6:00 PM &ndash; 8:00 PM</span><span class="download-pdf"><a href="pdf/Meeting-9.pdf" target="_blank">Download Display Boards (Archive)</a></span></p>
 
 				<p class="schedule_date"><span>February 19, 2015</span></p>
 
 				<p>Drew Charter School<br />
 				301 East Lake Boulevard, SE, Atlanta, GA 30317</p>
 
-				<p class="schedule_time"><span>6:00 PM &ndash; 8:00 PM</span></p>
+				<p class="schedule_time"><span>6:00 PM &ndash; 8:00 PM</span><span class="download-pdf"><a href="pdf/Meeting-10.pdf" target="_blank">Download Display Boards (Archive)</a></span></p>
 
 				<p class="schedule_date"><span>February 24, 2015</span></p>
 
 				<p>John C. Birdine Recreation Center<br />
 				215 Lakewood Way, SW, Atlanta, GA 30315</p>
 
-				<p class="schedule_time"><span>6:00 PM &ndash; 8:00 PM</span></p>
+				<p class="schedule_time"><span>6:00 PM &ndash; 8:00 PM</span><span class="download-pdf"><a href="pdf/Meeting-11.pdf" target="_blank">Download Display Boards (Archive)</a></span></p>
 
 				<p class="schedule_date"><span>February 26, 2015</span></p>
 
 				<p>Atlanta City Hall<br />
 				55 Trinity Avenue, SW, Atlanta, GA 30303</p>
 
-				<p class="schedule_time"><span>6:00 PM &ndash; 8:00 PM</span></p>
+				<p class="schedule_time"><span>6:00 PM &ndash; 8:00 PM</span><span class="download-pdf"><a href="pdf/Meeting-12.pdf" target="_blank">Download Display Boards (Archive)</a></span></p>
       </div>
     </div>
   `,
