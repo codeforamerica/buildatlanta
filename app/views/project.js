@@ -8,7 +8,7 @@ module.exports = View.extend({
       <img role="image"></img>
       <div role="name" class="name"></div>
       <div class="details">
-        <span role="cost" class="cost"></span>
+        <!--<span role="cost" class="cost"></span>-->
         <div class="addComment" role="comment">Comment</div>
       </div>
       <div role="description" class="description"></div>

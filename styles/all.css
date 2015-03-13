@@ -85,6 +85,7 @@ select option {
 .links {
   margin-bottom: 20px;
   font-size: 14px;
+	line-height: 24px;
 }
 
 .links a, .linklike {
@@ -101,9 +102,8 @@ select option {
   font-size: 16px;
   line-height: 27px;
   background: #DAEBF5;
-  margin: -5px -10px;
+  margin: 20px -10px;
   padding: 10px 15px;
-  margin-bottom: 5px;
 }
 
 .summary .indent {
@@ -236,10 +236,30 @@ select option {
 	padding-bottom: 5px;
 }
 
-estimated-costs tr th:first-child, .estimated-costs tr td:first-child {
+.estimated-costs tr th:first-child, .estimated-costs tr td:first-child {
 	text-align: left;
 }
 
 .total-est td {
 	border-top: 1px dotted #6F90AA;
+}
+
+.estimated-costs-full {
+	width: 100%;
+}
+
+.estimated-costs-full th, .estimated-costs-full td {
+	text-align: left;
+}
+
+.estimated-costs-full .col-right {
+	text-align: right;
+}
+
+.estimated-costs-full .row-border-bottom td, .estimated-costs-full .row-border-bottom th  {
+	border-bottom: 1px solid #000;
+}
+
+.summary p{
+	line-height: 18px;
 }

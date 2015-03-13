@@ -37,7 +37,9 @@ module.exports = View.extend({
           <a href="http://www.atlantaga.gov/infrastructure" target="_blank">Read more</a> &bull; 
           <a class="linklike" role="showDisclaimer">Disclaimer & Policy</a> &bull; 
           <a class="linklike" role="showAdditional">Additional Programs</a> &bull; 
-          <a class="linklike" role="showPublic">Public Meetings and Displays</a>
+          <a class="linklike" role="showPublic">Public Meetings and Displays</a><br />
+          <a class="linklike">DRAFT Project List (03/12/15)</a> &bull; 
+          <a class="linklike">Projects by Council District</a>
         </div>
         <div class="summary">
 					<table border="0" class="estimated-costs">
@@ -74,7 +76,105 @@ module.exports = View.extend({
 							<td>$250,000,000*</td>
 						</tr>						
 					</table>
-					<p><small>* Note: Amount is strictly project related costs and excludes $2M for bond financing costs</small></p>
+					<p><small>* Note: Amount is strictly project related costs and excludes $2M for bond financing costs.</small><br />
+					<small>City of Atlanta staff and Council Members are having ongoing discussions to finalize the local list of projects.</small></p>
+        </div>
+				<div class="summary">
+					<table border="0" class="estimated-costs-full">
+						<tr class="row-border-bottom">
+							<th width="80%">Project Type</th>
+							<th widht="20%" style="text-align: center">Amount</th>
+						</tr>
+						<tr>
+							<th><em>Transportation Projects</em></th>
+							<td>&nbsp;</td>
+						</tr>
+						<tr>
+							<td>Bridges</td>
+							<td class="col-right">$27,809,249</td>
+						</tr>
+						<tr>
+							<td>Complete Streets</td>
+							<td class="col-right">$32,067,049</td>
+						</tr>
+						<tr>
+							<td>Roadway Resurfacing</td>
+							<td class="col-right">$23,853,552</td>
+						</tr>
+						<tr>
+							<td>Sidewalks/ADA Ramps</td>
+							<td class="col-right">$5,000,000</td>
+						</tr>
+						<tr>
+							<td>School Zone Flashers</td>
+							<td class="col-right">$482,040</td>
+						</tr>
+						<tr>
+							<td>Traffic Signal</td>
+							<td>&nbsp;</td>
+						</tr>
+						<tr>
+							<td>Synchronization</td>
+							<td class="col-right">$17,767,600</td>
+						</tr>
+						<tr class="row-border-bottom">
+							<td>Traffic Signals</td>
+							<td class="col-right">$20,671,790</td>
+						</tr>
+						<tr>
+							<th class="col-right">Transportation Subtotal</th>
+							<th class="col-right"><em>$127,651,280</em></th>
+						</tr>	
+						<tr>
+							<th><em>Non-Transportation Projects</em></th>
+							<td>&nbsp;</td>
+						</tr>	
+						<tr>
+							<td>Facility Maintenance</td>
+							<td class="col-right">$10,500,000</td>
+						</tr>	
+						<tr>
+							<td>MLK Natatorium</td>
+							<td class="col-right">$17,500,000</td>
+						</tr>	
+						<tr>
+							<td>Public Art</td>
+							<td class="col-right">$11,800,000</td>
+						</tr>
+						<tr class="row-border-bottom">
+							<td>Public Safety</td>
+							<td class="col-right">$3,000,000</td>
+						</tr>
+						<tr>
+							<th class="col-right">Non-Transportation Subtotal</th>
+							<th class="col-right"><em>$42,800,000</em></th>
+						</tr>	
+						<tr>
+							<td colspan="2">&nbsp;</td>
+						</tr>	
+						<tr>
+							<th class="col-right"><em>Total - Citywide Projects</em></th>
+							<td class="col-right">$170,451,280</td>
+						</tr>	
+						<tr>
+							<th class="col-right"><em>Total - Local Projects</em></th>
+							<td class="col-right">$67,395,612</td>
+						</tr>	
+						<tr>
+							<th class="col-right"><em>Total</em></th>
+							<td class="col-right">$237,846,892</td>
+						</tr>	
+						<tr>
+							<th class="col-right"><em>Program Management and Administration</em></th>
+							<td class="col-right">$12,153,108</td>
+						</tr>	
+						<tr>
+							<th class="col-right"><em>Grand Total</em></th>
+							<td class="col-right">$250,000,000</td>
+						</tr>						
+					</table>
+					<p><small>* Note: Amount is strictly project related costs and excludes $2M for bond financing costs.</small><br />
+					<small>City of Atlanta staff and Council Members are having ongoing discussions to finalize the local list of projects.</small></p>
         </div>
         <div role="projects"></div>
       </div>

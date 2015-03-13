@@ -5,7 +5,7 @@ module.exports = View.extend({
     <div class="commentView">
       <div class="comments">
         <strong>Disclaimer</strong>
-        <p class="disclaimer">Attached hereto is a DRAFT listing of potential bond projects which may be presented to voters for consideration at the [March] 2015 referendum election.  This list is preliminary and has been compiled from a master listing of all needed infrastructure improvement.  This preliminary listing is being presented in DRAFT form for discussion purposes only and not as an indication of intention that such list will be the final list within the meaning of O.C.G.A. 36-81-1(d).  The final projects for consideration at the referendum election will be advertised  prior to the election and will be described on the ballot question.</p>
+        <p class="disclaimer">Attached hereto is a DRAFT listing of potential projects which may be funded from bond proceeds to be issued pursuant to the March 2015 bond referendum election. This list is preliminary and has been compiled from a master listing of all needed infrastructure improvements.  This preliminary listing is being presented in DRAFT form for discussion purposes only and not as an indication of intention that such list will be the final list within the meaning of O.C.G.A. 36-81-3(d). The final projects will be considered and approved by the City Council.</p>
 
         <p><strong>Commenting Policy</strong></p>
         <p>City of Atlanta departments share information, images and video with the public through external socialmedia websites. Comments made by the public to these sites are reviewed and, while comments will not be edited by City personnel, a comment may be deleted if it violates the comment policy described here.</p>
