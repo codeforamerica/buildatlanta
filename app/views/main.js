@@ -110,11 +110,7 @@ module.exports = View.extend({
 							<td class="col-right">$482,040</td>
 						</tr>
 						<tr>
-							<td>Traffic Signal</td>
-							<td>&nbsp;</td>
-						</tr>
-						<tr>
-							<td>Synchronization</td>
+							<td>Traffic Signal Synchronization</td>
 							<td class="col-right">$17,767,600</td>
 						</tr>
 						<tr class="row-border-bottom">
