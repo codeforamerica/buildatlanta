@@ -77,19 +77,20 @@ module.exports = View.extend({
 
 				<p class="schedule_time"><span>6:00 PM &ndash; 8:00 PM</span><span class="download-pdf"><a href="pdf/Complete-Display-Board-Package-Meeting-10.pdf" target="_blank">Download Display Boards (Archive)</a></span></p>
 
-				<p class="schedule_date"><span>February 24, 2015</span></p>
-
-				<p>John C. Birdine Recreation Center<br />
-				215 Lakewood Way, SW, Atlanta, GA 30315</p>
-
-				<p class="schedule_time"><span>6:00 PM &ndash; 8:00 PM</span><span class="download-pdf"><a href="pdf/Complete-Display-Board-Package-Meeting-11.pdf" target="_blank">Download Display Boards (Archive)</a></span></p>
-
 				<p class="schedule_date"><span>February 26, 2015</span></p>
 
 				<p>Atlanta City Hall<br />
 				55 Trinity Avenue, SW, Atlanta, GA 30303</p>
 
 				<p class="schedule_time"><span>6:00 PM &ndash; 8:00 PM</span><span class="download-pdf"><a href="pdf/Complete Display Board PDF Package Meeting 12.pdf" target="_blank">Download Display Boards (Archive)</a></span></p>
+
+				<p class="schedule_date"><span>March 5, 2015</span></p>
+
+				<p>John C. Birdine Recreation Center<br />
+				215 Lakewood Way, SW, Atlanta, GA 30315</p>
+
+				<p class="schedule_time"><span>6:00 PM &ndash; 8:00 PM</span><span class="download-pdf"><a href="pdf/Complete-Display-Board-Package-Meeting-11.pdf" target="_blank">Download Display Boards (Archive)</a></span></p>
+
       </div>
     </div>
   `,

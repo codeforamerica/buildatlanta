@@ -42,7 +42,7 @@ module.exports = View.extend({
           <a class="linklike">Projects by Council District</a>
         </div>
         <div class="summary">
-					<table border="0" class="estimated-costs">
+					<table border="0" class="	estimated-costs">
 						<tr>
 							<th width="30%">&nbsp;</th>
 							<th widht="21%">Citywide</th>
@@ -76,8 +76,8 @@ module.exports = View.extend({
 							<td>$250,000,000*</td>
 						</tr>						
 					</table>
-					<p><small>* Note: Amount is strictly project related costs and excludes $2M for bond financing costs.</small><br />
-					<small>City of Atlanta staff and Council Members are having ongoing discussions to finalize the local list of projects.</small></p>
+					<p><small>* Note: (1) Amount is strictly project related costs and excludes $2M for bond financing costs.</small><br />
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<small>(2) City of Atlanta staff and Council Members are having ongoing discussions to finalize the local list of projects.</small></p>
         </div>
 				<div class="summary">
 					<table border="0" class="estimated-costs-full">
@@ -162,7 +162,7 @@ module.exports = View.extend({
 						</tr>	
 						<tr>
 							<th class="col-right"><em>Total</em></th>
-							<td class="col-right">$237,846,892</td>
+							<th class="col-right">$237,846,892</th>
 						</tr>	
 						<tr>
 							<th class="col-right"><em>Program Management and Administration</em></th>
@@ -170,11 +170,11 @@ module.exports = View.extend({
 						</tr>	
 						<tr>
 							<th class="col-right"><em>Grand Total</em></th>
-							<td class="col-right">$250,000,000</td>
+							<th class="col-right">$250,000,000</th>
 						</tr>						
 					</table>
-					<p><small>* Note: Amount is strictly project related costs and excludes $2M for bond financing costs.</small><br />
-					<small>City of Atlanta staff and Council Members are having ongoing discussions to finalize the local list of projects.</small></p>
+					<p><small>* Note: (1) Amount is strictly project related costs and excludes $2M for bond financing costs.</small><br />
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<small>(2) City of Atlanta staff and Council Members are having ongoing discussions to finalize the local list of projects.</small></p>
         </div>
         <div role="projects"></div>
       </div>
