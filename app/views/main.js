@@ -39,7 +39,9 @@ module.exports = View.extend({
           <a class="linklike" role="showAdditional">Additional Programs</a> &bull; 
           <a class="linklike" role="showPublic">Public Meetings and Displays</a><br />
           <a class="linklike" href="pdf/250M_CityWide_3.15.2015_v2.pdf" target="_blank">DRAFT Project List (03/12/15)</a> &bull; 
-          <a class="linklike" href="pdf/Districts-1-12-Public-Requested-Projects-v3.pdf" target="_blank">Projects by Council District</a>
+          <a class="linklike" href="pdf/Districts-1-12-Public-Requested-Projects-v3.pdf" target="_blank">Projects by Council District</a> &bull; 
+          <a class="linklike" href="pdf/Tier-1.pdf" target="_blank">Tier 1 Projects</a> &bull; 
+          <a class="linklike" href="pdf/Tier-2.pdf" target="_blank">Tier 2 Projects</a>
         </div>
         <div class="summary">
 					<table border="0" class="	estimated-costs">
@@ -86,87 +88,85 @@ module.exports = View.extend({
 							<th widht="20%" style="text-align: center">Amount</th>
 						</tr>
 						<tr>
-							<th><em>Transportation Projects</em></th>
+							<th><em>Citywide - Transportation Projects</em></th>
 							<td>&nbsp;</td>
 						</tr>
 						<tr>
-							<td>Bridges</td>
-							<td class="col-right">$27,809,249</td>
+							<td>Traffic Signals</td>
+							<td class="col-right">$40,789,593</td>
 						</tr>
 						<tr>
-							<td>Complete Streets</td>
-							<td class="col-right">$32,067,049</td>
+							<td>ADA</td>
+							<td class="col-right">$5,239,992</td>
 						</tr>
 						<tr>
 							<td>Roadway Resurfacing</td>
-							<td class="col-right">$23,853,552</td>
+							<td class="col-right">$25,735,330</td>
 						</tr>
 						<tr>
-							<td>Sidewalks/ADA Ramps</td>
-							<td class="col-right">$5,000,000</td>
-						</tr>
-						<tr>
-							<td>School Zone Flashers</td>
-							<td class="col-right">$482,040</td>
-						</tr>
-						<tr>
-							<td>Traffic Signal Synchronization</td>
-							<td class="col-right">$17,767,600</td>
+							<td>Complete Streets</td>
+							<td class="col-right">$33,606,214</td>
 						</tr>
 						<tr class="row-border-bottom">
-							<td>Traffic Signals</td>
-							<td class="col-right">$20,671,790</td>
+							<td>Bridges</td>
+							<td class="col-right">$29,144,046</td>
 						</tr>
 						<tr>
 							<th class="col-right">Transportation Subtotal</th>
-							<th class="col-right"><em>$127,651,280</em></th>
+							<th class="col-right"><em>$134,515,175</em></th>
 						</tr>	
 						<tr>
-							<th><em>Non-Transportation Projects</em></th>
+							<th><em>Citywide - Municipal Facilities</em></th>
 							<td>&nbsp;</td>
 						</tr>	
 						<tr>
-							<td>Facility Maintenance</td>
-							<td class="col-right">$10,500,000</td>
+							<td>Public Safety VIC</td>
+							<td class="col-right">$3,143,995</td>
 						</tr>	
 						<tr>
-							<td>MLK Natatorium</td>
-							<td class="col-right">$17,500,000</td>
+							<td>Parks and Rec. Ctr.</td>
+							<td class="col-right">$18,339,971</td>
 						</tr>	
 						<tr>
-							<td>Public Art</td>
-							<td class="col-right">$11,800,000</td>
+							<td>Facility/Main and Upgrades/td>
+							<td class="col-right">$11,003,982</td>
 						</tr>
 						<tr class="row-border-bottom">
-							<td>Public Safety</td>
-							<td class="col-right">$3,000,000</td>
+							<td>Public Art Program</td>
+							<td class="col-right">$12,366,380</td>
 						</tr>
 						<tr>
 							<th class="col-right">Non-Transportation Subtotal</th>
-							<th class="col-right"><em>$42,800,000</em></th>
+							<th class="col-right"><em>$44,854,328</em></th>
 						</tr>	
 						<tr>
 							<td colspan="2">&nbsp;</td>
 						</tr>	
 						<tr>
 							<th class="col-right"><em>Total - Citywide Projects</em></th>
-							<td class="col-right">$170,451,280</td>
+							<th class="col-right">$179,369,503</th>
 						</tr>	
 						<tr>
-							<th class="col-right"><em>Total - Local Projects</em></th>
-							<td class="col-right">$67,395,612</td>
+							<td colspan="2">&nbsp;</td>
 						</tr>	
 						<tr>
-							<th class="col-right"><em>Total</em></th>
-							<th class="col-right">$237,846,892</th>
+							<th>Local - Transportation Projects</th>
+							<td class="col-right">$51,941,543</td>
 						</tr>	
 						<tr>
-							<th class="col-right"><em>Program Management and Administration</em></th>
-							<td class="col-right">$12,153,108</td>
+							<th>Local - Municipal Facilities</th>
+							<td class="col-right">$18,688,954</td>
 						</tr>	
 						<tr>
-							<th class="col-right"><em>Grand Total</em></th>
-							<th class="col-right">$250,000,000</th>
+							<td colspan="2">&nbsp;</td>
+						</tr>	
+						<tr>
+							<th class="col-right"><em>TOTAL - Local Projects</em></th>
+							<td class="col-right">$70,630,497</td>
+						</tr>	
+						<tr>
+							<th class="col-right"><em>TOTAL</em></th>
+							<td class="col-right">$250,000,000</td>
 						</tr>						
 					</table>
 					<p><small>* Note: (1) Amount is strictly project related costs and excludes $2M for bond financing costs.</small><br />
