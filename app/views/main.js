@@ -144,7 +144,7 @@ module.exports = View.extend({
 						</tr>	
 						<tr>
 							<th class="col-right"><em>Total - Citywide Projects</em></th>
-							<th class="col-right">$179,369,503</th>
+							<th class="col-right"><em>$179,369,503</em></th>
 						</tr>	
 						<tr>
 							<td colspan="2">&nbsp;</td>
@@ -163,6 +163,9 @@ module.exports = View.extend({
 						<tr>
 							<th class="col-right"><em>TOTAL - Local Projects</em></th>
 							<th class="col-right">$70,630,497</th>
+						</tr>	
+						<tr>
+							<td colspan="2">&nbsp;</td>
 						</tr>	
 						<tr>
 							<th class="col-right"><em>TOTAL</em></th>
