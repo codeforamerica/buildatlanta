@@ -124,7 +124,7 @@ module.exports = View.extend({
 							<td class="col-right">$3,143,995</td>
 						</tr>	
 						<tr>
-							<td>Parks and Rec. Ctr.</td>
+							<td>Parks and Recreation Centers</td>
 							<td class="col-right">$18,339,971</td>
 						</tr>	
 						<tr>
