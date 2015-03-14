@@ -88,7 +88,7 @@ module.exports = View.extend({
 							<th widht="20%" style="text-align: center">Amount</th>
 						</tr>
 						<tr>
-							<th><em>Citywide - Transportation Projects</em></th>
+							<th>Citywide - Transportation Projects</th>
 							<td>&nbsp;</td>
 						</tr>
 						<tr>
@@ -116,7 +116,7 @@ module.exports = View.extend({
 							<th class="col-right"><em>$134,515,175</em></th>
 						</tr>	
 						<tr>
-							<th><em>Citywide - Municipal Facilities</em></th>
+							<th>Citywide - Municipal Facilities</th>
 							<td>&nbsp;</td>
 						</tr>	
 						<tr>
@@ -128,7 +128,7 @@ module.exports = View.extend({
 							<td class="col-right">$18,339,971</td>
 						</tr>	
 						<tr>
-							<td>Facility/Main and Upgrades/td>
+							<td>Facility/Main and Upgrades</td>
 							<td class="col-right">$11,003,982</td>
 						</tr>
 						<tr class="row-border-bottom">
@@ -136,7 +136,7 @@ module.exports = View.extend({
 							<td class="col-right">$12,366,380</td>
 						</tr>
 						<tr>
-							<th class="col-right">Non-Transportation Subtotal</th>
+							<th class="col-right">Municipal Facilities Subtotal</th>
 							<th class="col-right"><em>$44,854,328</em></th>
 						</tr>	
 						<tr>
@@ -150,11 +150,11 @@ module.exports = View.extend({
 							<td colspan="2">&nbsp;</td>
 						</tr>	
 						<tr>
-							<th>Local - Transportation Projects</th>
+							<th class="col-right">Local - Transportation Projects</th>
 							<td class="col-right">$51,941,543</td>
 						</tr>	
 						<tr>
-							<th>Local - Municipal Facilities</th>
+							<th class="col-right">Local - Municipal Facilities</th>
 							<td class="col-right">$18,688,954</td>
 						</tr>	
 						<tr>
@@ -162,11 +162,11 @@ module.exports = View.extend({
 						</tr>	
 						<tr>
 							<th class="col-right"><em>TOTAL - Local Projects</em></th>
-							<td class="col-right">$70,630,497</td>
+							<th class="col-right">$70,630,497</th>
 						</tr>	
 						<tr>
 							<th class="col-right"><em>TOTAL</em></th>
-							<td class="col-right">$250,000,000</td>
+							<th class="col-right">$250,000,000</th>
 						</tr>						
 					</table>
 					<p><small>* Note: (1) Amount is strictly project related costs and excludes $2M for bond financing costs.</small><br />
