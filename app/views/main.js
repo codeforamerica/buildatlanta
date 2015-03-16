@@ -38,7 +38,7 @@ module.exports = View.extend({
           <a class="linklike" role="showDisclaimer">Disclaimer & Policy</a> &bull; 
           <a class="linklike" role="showAdditional">Additional Programs</a> &bull; 
           <a class="linklike" role="showPublic">Public Meetings and Displays</a><br />
-          <a class="linklike" href="pdf/250M_CityWide_3.15.2015_v2.pdf" target="_blank">DRAFT Project List (03/12/15)</a> &bull; 
+          <a class="linklike" href="pdf/Project_List_3.16.2015_v2.pdf" target="_blank">DRAFT Project List (03/16/15)</a> &bull; 
           <a class="linklike" href="pdf/Districts-1-12-Public-Requested-Projects-v3.pdf" target="_blank">Projects by Council District</a> &bull; 
           <a class="linklike" href="pdf/Tier-1.pdf" target="_blank">Tier 1 Projects</a> &bull; 
           <a class="linklike" href="pdf/Tier-2.pdf" target="_blank">Tier 2 Projects</a>
