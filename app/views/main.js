@@ -43,7 +43,7 @@ module.exports = View.extend({
           
         </div>
         <div class="summary">
-					<table border="0" class="	estimated-costs">
+					<table border="0" class="estimated-costs">
 						<tr>
 							<th width="30%">&nbsp;</th>
 							<th widht="21%">Citywide</th>
@@ -91,23 +91,23 @@ module.exports = View.extend({
 							<td>&nbsp;</td>
 						</tr>
 						<tr>
-							<td>Traffic Signals</td>
+							<td><img src="images/traffic.jpg" alt="Traffic Signals" class="project-icon" />Traffic Signals</td>
 							<td class="col-right">$40,789,593</td>
 						</tr>
 						<tr>
-							<td>ADA</td>
+							<td><img src="images/ada.jpg" alt="ADA" class="project-icon" />ADA</td>
 							<td class="col-right">$5,239,992</td>
 						</tr>
 						<tr>
-							<td>Roadway Resurfacing</td>
+							<td><img src="images/Roadways.jpg" alt="Roadway Resurfacing" class="project-icon" />Roadway Resurfacing</td>
 							<td class="col-right">$25,735,330</td>
 						</tr>
 						<tr>
-							<td>Complete Streets</td>
+							<td><img src="images/CompleteStreets.jpg" alt="Complete Streets" class="project-icon" />Complete Streets</td>
 							<td class="col-right">$33,606,214</td>
 						</tr>
 						<tr class="row-border-bottom">
-							<td>Bridges</td>
+							<td><img src="images/Bridges.jpg" alt="Bridges" class="project-icon" />Bridges</td>
 							<td class="col-right">$29,144,046</td>
 						</tr>
 						<tr>
@@ -119,19 +119,19 @@ module.exports = View.extend({
 							<td>&nbsp;</td>
 						</tr>	
 						<tr>
-							<td>Public Safety VIC</td>
+							<td><img src="images/PublicSafery.jpg" alt="Public Safety VIC" class="project-icon" />Public Safety VIC</td>
 							<td class="col-right">$3,143,995</td>
 						</tr>	
 						<tr>
-							<td>Parks and Recreation Centers</td>
+							<td><img src="images/park2.jpg" alt="Parks and Recreation Centers" class="project-icon" />Parks and Recreation Centers</td>
 							<td class="col-right">$18,339,971</td>
 						</tr>	
 						<tr>
-							<td>Facility/Main and Upgrades</td>
+							<td><img src="images/PublicBuildings.jpg" alt="Facility/Main and Upgrades" class="project-icon" />Facility/Main and Upgrades</td>
 							<td class="col-right">$11,003,982</td>
 						</tr>
 						<tr class="row-border-bottom">
-							<td>Public Art Program</td>
+							<td><img src="images/ArtProjects.jpg" alt="Public Art Program" class="project-icon" />Public Art Program</td>
 							<td class="col-right">$12,366,380</td>
 						</tr>
 						<tr>
