@@ -63,12 +63,11 @@ header .searchbox {
 }
 
 select {
-  background: #2780CA;
+  background: #182E55;
   color: rgba(255, 255, 255, 0.9);
   width: 160px;
   height: 26px;
   font-size: 14px;
-  background: none;
   margin-top: 10px;
   border: 1px solid rgba(255, 255, 255, 0.6);
 }
