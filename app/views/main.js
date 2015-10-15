@@ -95,7 +95,7 @@ module.exports = View.extend({
 							<td class="col-right">$40,789,593</td>
 						</tr>
 						<tr>
-							<td><img src="images/ada.jpg" alt="ADA" class="project-icon" />ADA</td>
+							<td><img src="images/ada.jpg" alt="ADA" class="project-icon" />ADA and Sidewalks</td>
 							<td class="col-right">$5,239,992</td>
 						</tr>
 						<tr>
@@ -119,7 +119,7 @@ module.exports = View.extend({
 							<td>&nbsp;</td>
 						</tr>	
 						<tr>
-							<td><img src="images/PublicSafery.jpg" alt="Public Safety VIC" class="project-icon" />Public Safety VIC</td>
+							<td><img src="images/PublicSafery.jpg" alt="Public Safety VIC" class="project-icon" />Public Safety</td>
 							<td class="col-right">$3,143,995</td>
 						</tr>	
 						<tr>
@@ -127,7 +127,7 @@ module.exports = View.extend({
 							<td class="col-right">$18,339,971</td>
 						</tr>	
 						<tr>
-							<td><img src="images/PublicBuildings.jpg" alt="Facility/Main and Upgrades" class="project-icon" />Facility/Main and Upgrades</td>
+							<td><img src="images/PublicBuildings.jpg" alt="Facility/Main and Upgrades" class="project-icon" />Public Buildings</td>
 							<td class="col-right">$11,003,982</td>
 						</tr>
 						<tr class="row-border-bottom">
