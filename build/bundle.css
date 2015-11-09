@@ -80,6 +80,7 @@ select option {
   margin-bottom: 8px;
   line-height: 24px;
   margin-top: -6px;
+  font-weight:600;
 }
 
 .links {
